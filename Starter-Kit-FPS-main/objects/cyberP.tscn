@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cdsionl7hmskp"]
+
+[ext_resource type="PackedScene" uid="uid://de22cl1nlg7x6" path="res://Cyberpunk Platform by Quaternius - dHymLbsOMY.glb" id="1_8pttv"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_rr370"]
+size = Vector3(2.171936, 0.5817871, 2.1461334)
+
+[node name="Node3D" type="Node3D" unique_id=1629152171]
+
+[node name="Root Scene" parent="." unique_id=1767051209 instance=ExtResource("1_8pttv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0069376826, 0.8099104, -0.13310671)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Root Scene" unique_id=1293480774]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Root Scene/StaticBody3D" unique_id=961548438]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0030822754, -0.20910645, 0.0049758554)
+shape = SubResource("BoxShape3D_rr370")

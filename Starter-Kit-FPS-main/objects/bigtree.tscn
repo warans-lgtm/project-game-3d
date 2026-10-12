@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://y6r85a0gcrvm"]
+
+[ext_resource type="PackedScene" uid="uid://s0pifcwt4bjh" path="res://Big Tree by 3Donimus - dNWh762PN-6.glb" id="1_v21f7"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_1w227"]
+radius = 0.18798828
+height = 0.9658203
+
+[node name="Node3D" type="Node3D" unique_id=23759111]
+
+[node name="Big Tree by 3Donimus - dNWh762PN-6" parent="." unique_id=1327664079 instance=ExtResource("1_v21f7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.25857902, 1.3994474, -0.100767374)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Big Tree by 3Donimus - dNWh762PN-6" unique_id=931071026]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25857902, -1.3994474, 0.100767374)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Big Tree by 3Donimus - dNWh762PN-6/StaticBody3D" unique_id=532505298]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.025674641, 0.37939453, 0.014600992)
+shape = SubResource("CapsuleShape3D_1w227")
